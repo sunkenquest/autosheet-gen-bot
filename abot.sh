@@ -33,7 +33,7 @@ fi
 JSON_PAYLOAD=$(jq -n --arg text "$MESSAGE" '{text: $text}')
 
 # Send the message to the webhook
-RESPONSE=$(curl -s -X POST "$WEBHOOK_URL" \
+RESPONSE=$(curl -s -X POST "$WEEKLY_WEBHOOK_URL" \
     -H "Content-Type: application/json" \
     -d "$JSON_PAYLOAD")
 
