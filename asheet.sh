@@ -47,7 +47,22 @@ fi
 # Check if values are present
 if echo "$RESPONSE" | jq . >/dev/null 2>&1; then
     echo "All values in the range:"
-    echo "$RESPONSE" | jq -r '.values[] | .[] // empty'
+    VALUES=$(echo "$RESPONSE" | jq -r '.values[] | .[] // empty')
+    echo "$VALUES"
 else
     echo "Invalid JSON response."
+    exit 1
+fi
+
+# Prompt to save the values to data.txt
+read -p "Do you want to save the values to data.txt? (y/n): " SAVE
+
+if [[ "$SAVE" == "y" || "$SAVE" == "Y" ]]; then
+    # Append the date and values to data.txt
+    echo "$(date '+%Y-%m-%d %H:%M:%S')" >> data.txt
+    echo "$VALUES" >> data.txt
+    echo "" >> data.txt 
+    echo "Values saved to data.txt."
+else
+    echo "Values not saved."
 fi
