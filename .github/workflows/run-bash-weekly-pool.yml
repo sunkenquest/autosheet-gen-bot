@@ -5,27 +5,38 @@ on:
     branches:
       - main
   schedule:
-    - cron: '*/5 17-19 * * 1-5' #Every 5 minutes, between 05:00 PM and 07:59 PM, Monday through Friday
+    - cron: '*/5 17-19 * * 1-5' # Every 5 minutes, between 05:00 PM and 07:59 PM, Monday through Friday
+
 jobs:
   run-bash:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Install jq
-      run: sudo apt-get install -y jq
+      - name: Install jq
+        run: sudo apt-get install -y jq
 
-    - name: Run Auto Weekly Pooling Script
-      env:
-        CLIENT_EMAIL: ${{ secrets.CLIENT_EMAIL }}
-        PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        SHEET_ID: ${{ secrets.SHEET_ID }}
-        WEEKLY_WEBHOOK_URL: ${{ secrets.WEEKLY_WEBHOOK_URL }}
-        DAILY_WEBHOOK_URL: ${{ secrets.DAILY_WEBHOOK_URL }}
-        RANGE: ${{ secrets.RANGE }}
-      run: |
-        chmod +x ./autoget.sh
-        ./autoget.sh
+      - name: Run Auto Weekly Pooling Script
+        env:
+          CLIENT_EMAIL: ${{ secrets.CLIENT_EMAIL }}
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SHEET_ID: ${{ secrets.SHEET_ID }}
+          WEEKLY_WEBHOOK_URL: ${{ secrets.WEEKLY_WEBHOOK_URL }}
+          DAILY_WEBHOOK_URL: ${{ secrets.DAILY_WEBHOOK_URL }}
+          RANGE: ${{ secrets.RANGE }}
+        run: |
+          chmod +x ./autoget.sh
+          ./autoget.sh
+
+      - name: Commit changes
+        run: |
+          git config --local user.name "GitHub Action"
+          git config --local user.email "action@github.com"
+          git add data.txt
+          git commit -m "Update data.txt with new values" || echo "No changes to commit"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
