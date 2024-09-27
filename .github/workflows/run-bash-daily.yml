@@ -1,8 +1,9 @@
 name: Run Auto Daily Script
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '*/5 17-19 * * 1-5' #Every 5 minutes, between 05:00 PM and 07:59 PM, Monday through Friday
+    - cron: '*/5 17 * * 1-5' #Every 5 minutes, between 05:00 PM and 05:59 PM, Monday through Friday
 jobs:
   run-bash:
     runs-on: ubuntu-latest
