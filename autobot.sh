@@ -22,13 +22,7 @@ echo -e "Preview of the message to be sent:\n"
 echo "$MESSAGE"
 echo
 
-# Ask for confirmation to send the message
-read -p "Do you want to send this message? (y/n): " CONFIRM
-if [[ "$CONFIRM" != "y" && "$CONFIRM" != "Y" ]]; then
-    echo "Message not sent."
-    exit 0
-fi
-
+# Automatically send the message
 # Prepare JSON payload
 JSON_PAYLOAD=$(jq -n --arg text "$MESSAGE" '{text: $text}')
 

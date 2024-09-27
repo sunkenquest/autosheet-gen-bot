@@ -31,20 +31,9 @@ generate_summary() {
 # Initial summary generation
 SUMMARY=$(generate_summary)
 
-# Output the summary and ask for confirmation
-while true; do
-    echo -e "Generated Summary:\n$SUMMARY"
-    read -p "Is this summary correct? (y/n): " CONFIRM
-    if [[ "$CONFIRM" == "y" || "$CONFIRM" == "Y" ]]; then
-        # Save to result.txt
-        echo "$SUMMARY" > result.txt
-        echo "Summary saved to result.txt."
-        break
-    elif [[ "$CONFIRM" == "n" || "$CONFIRM" == "N" ]]; then
-        # Regenerate summary
-        echo "Regenerating summary..."
-        SUMMARY=$(generate_summary)
-    else
-        echo "Please enter 'y' for yes or 'n' for no."
-    fi
-done
+# Output the summary
+echo -e "Generated Summary:\n$SUMMARY"
+
+# Automatically save the summary to result.txt
+echo "$SUMMARY" > result.txt
+echo "Summary saved to result.txt."
