@@ -18,7 +18,7 @@ fi
 CONTENT=$(cat data.txt)
 
 # Prepare the text for the API
-TEXT="Summarize this, each line is a different task:\n$CONTENT. The first line should be like this **WEEKLY REPORT (Start Month-Start Day-Year to End-Month-End-Day-Year)**. Ignore the lunch break, uniform bullet points, no need for titles, avoid duplicates"
+TEXT="Start your response with WEEKLY REPORT (Start Month-Start Day-Year to End-Month-End-Day-Year). Summarize this, each line is a different task:\n$CONTENT. Ignore the lunch break, uniform bullet points, no need for titles, avoid duplicates"
 
 # Function to generate the summary
 generate_summary() {
