@@ -34,10 +34,6 @@ SUMMARY=$(generate_summary)
 # Output the summary
 echo -e "Generated Summary:\n$SUMMARY"
 
-# Automatically save the summary to result.txt
-echo "$SUMMARY" > ./result.txt
-echo "Summary saved to result.txt."
-
 # Send the summary to the bot
 # Construct JSON payload directly with SUMMARY
 JSON_PAYLOAD=$(jq -n --arg message "$SUMMARY" '{text: $message}')
