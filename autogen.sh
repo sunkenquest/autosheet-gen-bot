@@ -1,21 +1,21 @@
 #!/bin/bash
 
 # Ensure the API key is set
-if [[ -f .env ]]; then
-    source .env
-else
-    echo ".env file not found!"
-    exit 1
-fi
+# if [[ -f .env ]]; then
+#     source .env
+# else
+#     echo ".env file not found!"
+#     exit 1
+# fi
 
 # Check if data.txt exists
-if [[ ! -f data.txt ]]; then
+if [[ ! -f ./data.txt ]]; then
     echo "data.txt not found!"
     exit 1
 fi
 
 # Read the content of data.txt
-CONTENT=$(cat data.txt)
+CONTENT=$(cat ./data.txt)
 
 # Prepare the text for the API
 TEXT="Start your response with WEEKLY REPORT (Start Month-Start Day-Year to End-Month-End-Day-Year). Summarize this, each line is a different task:\n$CONTENT. Ignore the lunch break, uniform bullet points, no need for titles, avoid duplicates"
@@ -35,5 +35,18 @@ SUMMARY=$(generate_summary)
 echo -e "Generated Summary:\n$SUMMARY"
 
 # Automatically save the summary to result.txt
-echo "$SUMMARY" > result.txt
+echo "$SUMMARY" > ./result.txt
 echo "Summary saved to result.txt."
+
+# Send the summary to the bot
+MESSAGE="Weekly report generated:\n$SUMMARY"
+
+# Construct JSON payload
+JSON_PAYLOAD=$(jq -n --arg message "$MESSAGE" '{text: $message}')
+
+# Send the notification
+RESPONSE=$(curl -s -X POST "$WEEKLY_WEBHOOK_URL" \
+    -H "Content-Type: application/json" \
+    -d "$JSON_PAYLOAD")
+
+echo "Notification sent to bot: $RESPONSE"
