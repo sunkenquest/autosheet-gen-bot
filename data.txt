@@ -1,10 +1,40 @@
-2024-09-27 10:10:43
-test
-test2
-test3
-test4
-test5
-tets6
-test7
-test8
+2024-09-23 17:56:37
+- continued upskilling on Vue3, Java, created a simple Google Extension
+- continued upskilling on Vue3, Java, created a simple Google Extension
+- continued upskilling on Vue3, Java, created a simple Google Extension
+- continued upskilling on Vue3, Java, created a simple Google Extension
+- continued upskilling on Vue3, Java, created a simple Google Extension
+- continued upskilling on Vue3, Java, created a simple Google Extension
+- continued upskilling on Vue3, Java, created a simple Google Extension
+- continued upskilling on Vue3, Java, created a simple Google Extension
+
+2024-09-24 17:42:37
+- fix MySQL authentication problem
+- fix MySQL authentication problem
+- fix MySQL authentication problem
+- fix MySQL authentication problem
+- ON LEAVE
+- ON LEAVE
+- ON LEAVE
+- ON LEAVE
+
+2024-09-25 17:48:37
+- created an automation Desktop Application using Java Swing to automate sending of signed payslips
+- created an automation Desktop Application using Java Swing to automate sending of signed payslips
+- created an automation Desktop Application using Java Swing to automate sending of signed payslips
+- created an automation Desktop Application using Java Swing to automate sending of signed payslips
+- created an automation Desktop Application using Java Swing to automate sending of signed payslips
+- created an automation Desktop Application using Java Swing to automate sending of signed payslips
+- created an automation Desktop Application using Java Swing to automate sending of signed payslips
+- created an automation Desktop Application using Java Swing to automate sending of signed payslips
+
+2024-09-26 17:26:37
+- earthquake drill
+- design a bash script for automating getting the data from the google sheets
+- implemented Gemini AI to summarize the weekly and daily report
+- added bots to google sheet to watch for the changes in the cells
+- added webhook bots to google chat to receive the summarized reports
+- optimize scripts
+- extented the functionality to allow for dynamic user fetching
+- extented the functionality to allow for dynamic user fetching
 
