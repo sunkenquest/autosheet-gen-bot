@@ -7,6 +7,9 @@ on:
   schedule:
     - cron: '*/5 17-19 * * 1-5' # Every 5 minutes, between 05:00 PM and 07:59 PM, Monday through Friday
 
+permissions:
+  contents: write
+
 jobs:
   run-bash:
     runs-on: ubuntu-latest
@@ -39,4 +42,4 @@ jobs:
           git commit -m "Update data.txt with new values" || echo "No changes to commit"
           git push origin main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
