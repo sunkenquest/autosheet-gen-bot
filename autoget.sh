@@ -54,7 +54,7 @@ else
     exit 1
 fi
 
-echo "$(date '+%Y-%m-%d %H:%M:%S')" >> data.txt
-echo "$VALUES" >> data.txt
-echo "" >> data.txt 
+echo "$(date '+%Y-%m-%d %H:%M:%S')" >> ./data.txt
+echo "$VALUES" >> ./data.txt
+echo "" >> ./data.txt 
 echo "Values saved to data.txt."
