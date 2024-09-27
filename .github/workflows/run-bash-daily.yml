@@ -5,10 +5,9 @@ on:
     branches:
       - main
   schedule:
-    - cron: '41 18 * * 1-5' # 10:41 AM PST (18:41 UTC) on weekdays
-    - cron: '50 18 * * 1-5' # 10:50 AM PST (18:50 UTC) on weekdays
-    - cron: '52 18 * * 1-5' # 10:52 AM PST (18:52 UTC) on weekdays
-    - cron: '54 18 * * 1-5' # 10:54 AM PST (18:54 UTC) on weekdays
+    - cron: '30 9 * * 1-5' #run every weekdays 5:30 pm
+    - cron: '45 9 * * 1-5' #run every weekdays 5:45 pm
+
 jobs:
   run-bash:
     runs-on: ubuntu-latest
