@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: '35 10 * * 1-5' # Triggers at 10:35 AM, Monday to Friday
 
 jobs:
   run-bash:
