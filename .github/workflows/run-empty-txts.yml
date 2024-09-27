@@ -3,7 +3,7 @@ name: Run Empty Txts
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 13 * * 5' # At 01:00 PM UTC, only on Friday
+    - cron: '0 21 * * 5' # At 09:'0 PM, only on Friday
 
 permissions:
   contents: write
