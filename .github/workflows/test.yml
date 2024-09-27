@@ -1,0 +1,33 @@
+name: Run Empty Txts
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '50-59/5 16 * * 5'
+
+permissions:
+  contents: write
+
+jobs:
+  run-bash:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Install jq
+      run: sudo apt-get install -y jq
+
+    - name: Run Auto Daily script
+      env:
+        CLIENT_EMAIL: ${{ secrets.CLIENT_EMAIL }}
+        PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        SHEET_ID: ${{ secrets.SHEET_ID }}
+        WEEKLY_WEBHOOK_URL: ${{ secrets.WEEKLY_WEBHOOK_URL }}
+        DAILY_WEBHOOK_URL: ${{ secrets.DAILY_WEBHOOK_URL }}
+        RANGE: ${{ secrets.RANGE }}
+      run: |
+        chmod +x ./autodaily.sh
+        ./autodaily.sh
