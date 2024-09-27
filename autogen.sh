@@ -39,10 +39,8 @@ echo "$SUMMARY" > ./result.txt
 echo "Summary saved to result.txt."
 
 # Send the summary to the bot
-MESSAGE="Weekly report generated:\n$SUMMARY"
-
-# Construct JSON payload
-JSON_PAYLOAD=$(jq -n --arg message "$MESSAGE" '{text: $message}')
+# Construct JSON payload directly with SUMMARY
+JSON_PAYLOAD=$(jq -n --arg message "$SUMMARY" '{text: $message}')
 
 # Send the notification
 RESPONSE=$(curl -s -X POST "$WEEKLY_WEBHOOK_URL" \
