@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Service account credentials
+if [[ -f .env ]]; then
+    source .env
+else
+    echo ".env file not found!"
+    exit 1
+fi
+
 # Encode the JWT header
 JWT_HEADER=$(echo -n '{"alg":"RS256","typ":"JWT"}' | openssl base64 | tr -d '\n=' | tr '/+' '_-')
 
@@ -54,26 +62,19 @@ if echo "$RESPONSE" | jq . >/dev/null 2>&1; then
     echo "Summary:"
     echo "$SUMMARY"
 
-    # Confirm before sending the message
-    read -p "Do you want to send this summary to the bot? (yes/no): " CONFIRMATION
+    # Prepare JSON payload for the webhook
+    JSON_PAYLOAD=$(jq -n --arg text "$SUMMARY" '{text: $text}')
 
-    if [[ "$CONFIRMATION" =~ ^[Yy](es)?$ ]]; then
-        # Prepare JSON payload for the webhook
-        JSON_PAYLOAD=$(jq -n --arg text "$SUMMARY" '{text: $text}')
+    # Send the summary to the webhook
+    RESPONSE=$(curl -s -X POST "$DAILY_WEBHOOK_URL" \
+        -H "Content-Type: application/json" \
+        -d "$JSON_PAYLOAD")
 
-        # Send the summary to the webhook
-        RESPONSE=$(curl -s -X POST "$DAILY_WEBHOOK_URL" \
-            -H "Content-Type: application/json" \
-            -d "$JSON_PAYLOAD")
-
-        # Check if the message was sent successfully
-        if [[ $? -eq 0 ]]; then
-            echo "Message sent to the channel successfully."
-        else
-            echo "Failed to send the message."
-        fi
+    # Check if the message was sent successfully
+    if [[ $? -eq 0 ]]; then
+        echo "Message sent to the channel successfully."
     else
-        echo "Message not sent."
+        echo "Failed to send the message."
     fi
 
 else
