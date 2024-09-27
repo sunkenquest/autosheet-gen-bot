@@ -38,26 +38,46 @@ fi
 
 # Check if values are present
 if echo "$RESPONSE" | jq . >/dev/null 2>&1; then
-    echo "All values in the range:"
-    VALUES=$(echo "$RESPONSE" | jq -r '.values[] | .[] // empty')
-    echo "$VALUES"
+    if [[ $(echo "$RESPONSE" | jq '.values') == "null" || $(echo "$RESPONSE" | jq '.values | length') -eq 0 ]]; then
+        # If values are empty or null
+        echo "Wala man laman"
+        
+        # Generate a motivational quote using Gemini
+        TEXT="Generate a motivational quote."
+        SUMMARY_RESPONSE=$(curl -s -H 'Content-Type: application/json' \
+            -d '{"contents":[{"parts":[{"text":"'"$TEXT"'"}]}]}' \
+            -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=$GEMINI_API_KEY")
 
-    # Use Gemini to summarize the response
-    TEXT="Summarize the following in concise bullet points: $VALUES. Provide only descriptions—no subject lines, introductions, or text formatting like asterisk, sharp sigh etc."
-    SUMMARY_RESPONSE=$(curl -s -H 'Content-Type: application/json' \
-        -d '{"contents":[{"parts":[{"text":"'"$TEXT"'"}]}]}' \
-        -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=$GEMINI_API_KEY")
-    
-    # Extract summary text
-    SUMMARY=$(echo "$SUMMARY_RESPONSE" | jq -r '.candidates[0].content.parts[0].text')
+        # Extract and print the motivational quote
+        MOTIVATIONAL_QUOTE=$(echo "$SUMMARY_RESPONSE" | jq -r '.candidates[0].content.parts[0].text')
+        echo "Motivational Quote:"
+        echo "$MOTIVATIONAL_QUOTE"
 
-    echo "Summary:"
-    echo "$SUMMARY"
+        # Prepare JSON payload for the webhook with the motivational quote
+        JSON_PAYLOAD=$(jq -n --arg text "$MOTIVATIONAL_QUOTE" '{text: $text}')
+    else
+        # If values are present
+        echo "All values in the range:"
+        VALUES=$(echo "$RESPONSE" | jq -r '.values[] | .[] // empty')
+        echo "$VALUES"
 
-    # Prepare JSON payload for the webhook
-    JSON_PAYLOAD=$(jq -n --arg text "$SUMMARY" '{text: $text}')
+        # Use Gemini to summarize the response
+        TEXT="Summarize the following in concise bullet points: $VALUES. Provide only descriptions—no subject lines, introductions, or text formatting like asterisk, sharp sigh etc."
+        SUMMARY_RESPONSE=$(curl -s -H 'Content-Type: application/json' \
+            -d '{"contents":[{"parts":[{"text":"'"$TEXT"'"}]}]}' \
+            -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=$GEMINI_API_KEY")
+        
+        # Extract summary text
+        SUMMARY=$(echo "$SUMMARY_RESPONSE" | jq -r '.candidates[0].content.parts[0].text')
+        
+        echo "Summary:"
+        echo "$SUMMARY"
 
-    # Send the summary to the webhook
+        # Prepare JSON payload for the webhook
+        JSON_PAYLOAD=$(jq -n --arg text "$SUMMARY" '{text: $text}')
+    fi
+
+    # Send the JSON payload to the webhook
     RESPONSE=$(curl -s -X POST "$DAILY_WEBHOOK_URL" \
         -H "Content-Type: application/json" \
         -d "$JSON_PAYLOAD")
