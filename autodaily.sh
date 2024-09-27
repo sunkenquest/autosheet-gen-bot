@@ -39,22 +39,10 @@ fi
 # Check if values are present
 if echo "$RESPONSE" | jq . >/dev/null 2>&1; then
     if [[ $(echo "$RESPONSE" | jq '.values') == "null" || $(echo "$RESPONSE" | jq '.values | length') -eq 0 ]]; then
-        # If values are empty or null
-        echo "Wala man laman"
-        
-        # Generate a motivational quote using Gemini
-        TEXT="Generate a motivational quote."
-        SUMMARY_RESPONSE=$(curl -s -H 'Content-Type: application/json' \
-            -d '{"contents":[{"parts":[{"text":"'"$TEXT"'"}]}]}' \
-            -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=$GEMINI_API_KEY")
-
-        # Extract and print the motivational quote
-        MOTIVATIONAL_QUOTE=$(echo "$SUMMARY_RESPONSE" | jq -r '.candidates[0].content.parts[0].text')
-        echo "Motivational Quote:"
-        echo "$MOTIVATIONAL_QUOTE"
-
-        # Prepare JSON payload for the webhook with the motivational quote
-        JSON_PAYLOAD=$(jq -n --arg text "$MOTIVATIONAL_QUOTE" '{text: $text}')
+        # Send the JSON payload to the webhook
+        RESPONSE=$(curl -s -X POST "$DAILY_WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -d "Wala man laman daily mo")
     else
         # If values are present
         echo "All values in the range:"
@@ -75,20 +63,19 @@ if echo "$RESPONSE" | jq . >/dev/null 2>&1; then
 
         # Prepare JSON payload for the webhook
         JSON_PAYLOAD=$(jq -n --arg text "$SUMMARY" '{text: $text}')
+
+        # Send the JSON payload to the webhook
+        RESPONSE=$(curl -s -X POST "$DAILY_WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -d "$JSON_PAYLOAD")
+
+        # Check if the message was sent successfully
+        if [[ $? -eq 0 ]]; then
+            echo "Message sent to the channel successfully."
+        else
+            echo "Failed to send the message."
+        fi
     fi
-
-    # Send the JSON payload to the webhook
-    RESPONSE=$(curl -s -X POST "$DAILY_WEBHOOK_URL" \
-        -H "Content-Type: application/json" \
-        -d "$JSON_PAYLOAD")
-
-    # Check if the message was sent successfully
-    if [[ $? -eq 0 ]]; then
-        echo "Message sent to the channel successfully."
-    else
-        echo "Failed to send the message."
-    fi
-
 else
     echo "Invalid JSON response."
     exit 1
