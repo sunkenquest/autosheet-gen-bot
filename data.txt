@@ -38,8 +38,3 @@
 - extented the functionality to allow for dynamic user fetching
 - extented the functionality to allow for dynamic user fetching
 
-2024-09-27 05:19:34
-- automate triggering of the script using github workflows
-- set the schedule every 5 min every weekdays
-- fix delayed schedule of workflow run
-

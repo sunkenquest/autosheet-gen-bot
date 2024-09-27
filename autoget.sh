@@ -54,7 +54,29 @@ else
     exit 1
 fi
 
+# Ensure data.txt exists
+if [[ ! -f ./data.txt ]]; then
+    touch ./data.txt
+fi
+
 echo "$(date '+%Y-%m-%d %H:%M:%S')" >> ./data.txt
 echo "$VALUES" >> ./data.txt
 echo "" >> ./data.txt 
 echo "Values saved to data.txt."
+
+# Send notification to the bot
+if [[ -n "$VALUES" ]]; then
+    MESSAGE="Daily report saved with values: $VALUES"
+else
+    MESSAGE="Daily report saved, but no values were retrieved."
+fi
+
+# Construct JSON payload
+JSON_PAYLOAD=$(jq -n --arg message "$MESSAGE" '{text: $message}')
+
+# Send the notification
+RESPONSE=$(curl -s -X POST "$DAILY_WEBHOOK_URL" \
+    -H "Content-Type: application/json" \
+    -d "$JSON_PAYLOAD")
+
+echo "Notification sent to bot: $RESPONSE"
