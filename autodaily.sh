@@ -1,13 +1,5 @@
 #!/bin/bash
 
-# Service account credentials
-if [[ -f .env ]]; then
-    source .env
-else
-    echo ".env file not found!"
-    exit 1
-fi
-
 # Encode the JWT header
 JWT_HEADER=$(echo -n '{"alg":"RS256","typ":"JWT"}' | openssl base64 | tr -d '\n=' | tr '/+' '_-')
 
