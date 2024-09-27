@@ -5,8 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '35 10 * * 1-5' # Triggers at 10:35 AM, Monday to Friday
-
+    - cron: '41 2 * * 1-5' # Triggers at 2:41 AM UTC (10:41 AM PST), Monday to Friday
 jobs:
   run-bash:
     runs-on: ubuntu-latest
