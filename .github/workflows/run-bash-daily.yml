@@ -5,9 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '30 9 * * 1-5' #run every weekdays 5:30 pm
-    - cron: '45 9 * * 1-5' #run every weekdays 5:45 pm
-
+    - cron: '*/5 * * * *'
 jobs:
   run-bash:
     runs-on: ubuntu-latest
