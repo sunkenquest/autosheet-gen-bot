@@ -39,10 +39,17 @@ fi
 # Check if values are present
 if echo "$RESPONSE" | jq . >/dev/null 2>&1; then
     if [[ $(echo "$RESPONSE" | jq '.values') == "null" || $(echo "$RESPONSE" | jq '.values | length') -eq 0 ]]; then
-        # Send the JSON payload to the webhook
+        # Send the message to the bot if values are empty or null
         RESPONSE=$(curl -s -X POST "$DAILY_WEBHOOK_URL" \
             -H "Content-Type: application/json" \
-            -d "Wala man laman daily mo")
+            -d '{"text": "Wala man laman daily mo"}')
+        
+        # Check if the message was sent successfully
+        if [[ $? -eq 0 ]]; then
+            echo "Message sent to the bot successfully."
+        else
+            echo "Failed to send the message."
+        fi
     else
         # If values are present
         echo "All values in the range:"
