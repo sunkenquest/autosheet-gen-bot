@@ -2,8 +2,8 @@ name: Run Auto Weekly Summary Script
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '*/5 17 * * 5' # Every 5 minutes, between 05:00 PM and 05:59 PM, only on Friday
+  # schedule:
+  #   - cron: '*/5 17 * * 5' # Every 5 minutes, between 05:00 PM and 05:59 PM, only on Friday
 
 jobs:
   run-bash:
