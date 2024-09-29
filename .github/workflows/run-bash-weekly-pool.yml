@@ -30,6 +30,7 @@ jobs:
           RANGE: ${{ secrets.RANGE }}
         run: |
           chmod +x ./autoget.sh
+          date
           ./autoget.sh
 
       - name: Commit changes
