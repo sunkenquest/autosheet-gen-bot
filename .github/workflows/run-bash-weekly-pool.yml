@@ -3,7 +3,7 @@ name: Run Auto Weekly Pooling Script
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/5 11-23 * * 0' # test 
+    - cron: '*/5 3-15 * * 0' # test 
 
 permissions:
   contents: write
@@ -30,7 +30,6 @@ jobs:
           RANGE: ${{ secrets.RANGE }}
         run: |
           chmod +x ./autoget.sh
-          date
           ./autoget.sh
 
       - name: Commit changes
