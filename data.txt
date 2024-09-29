@@ -18,3 +18,13 @@
 - fix timezone difference in scheduling a workflow run
 - test timezone trigger workflows and find ways to accurately set the time
 
+2024-09-29 00:23:30
+- automate triggering of the script using github workflows
+- set the schedule every 5 min every weekdays
+- fix delayed schedule of workflow run
+- remove confirmation prompt
+- handle empty cells when  generating daily and weekly report
+- added a make command to swiftly run the scripts locally
+- fix timezone difference in scheduling a workflow run
+- test timezone trigger workflows and find ways to accurately set the time
+
