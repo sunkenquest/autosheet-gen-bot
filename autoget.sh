@@ -92,6 +92,15 @@ echo -e "Generated Summary:\n$SUMMARY"
 # Construct JSON payload directly with SUMMARY
 JSON_PAYLOAD=$(jq -n --arg message "$SUMMARY" '{text: $message}')
 
+# Get the current date and time
+CURRENT_DATE=$(date '+%A, %Y-%m-%d %H:%M:%S')  # Optional: Add day of the week (e.g., Monday)
+
+# Add the current date to the message and include a newline
+MESSAGE="Daily report saved on $CURRENT_DATE.\n\nValues:"
+
+# Construct the JSON payload using jq with proper handling for newline characters
+JSON_PAYLOAD=$(jq -n --arg message "$MESSAGE" '{text: $message}')
+
 # Send the notification to the webhook
 RESPONSE=$(curl -s -X POST "$WEEKLY_WEBHOOK_URL" \
     -H "Content-Type: application/json" \
