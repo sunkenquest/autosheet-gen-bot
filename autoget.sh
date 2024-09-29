@@ -85,11 +85,11 @@ if [[ -z "$SUMMARY" ]]; then
     exit 1
 fi
 
-# Output the generated summary
-echo -e "Generated Summary:\n$SUMMARY"
+# Prepare the message with proper newlines
+MESSAGE=$(printf "Generated Summary:\n%s" "$SUMMARY")
 
-# Send the summary to the bot
-JSON_PAYLOAD=$(jq -n --arg message "Generated Summary:\\n $SUMMARY" '{text: $message}')
+# Construct JSON payload with the formatted message
+JSON_PAYLOAD=$(jq -n --arg message "$MESSAGE" '{text: $message}')
 
 # Send the notification to the webhook
 RESPONSE=$(curl -s -X POST "$WEEKLY_WEBHOOK_URL" \
