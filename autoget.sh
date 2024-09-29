@@ -66,7 +66,7 @@ echo "Values saved to data.txt."
 
 # Send notification to the bot
 if [[ -n "$VALUES" ]]; then
-    MESSAGE="Daily report saved with values:\n$VALUES"
+    MESSAGE="Daily report saved with values:\\n$VALUES"
 else
     MESSAGE="Daily report saved, but no values were retrieved."
 fi
