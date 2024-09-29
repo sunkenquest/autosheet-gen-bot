@@ -64,22 +64,38 @@ echo "$VALUES" >> ./data.txt
 echo "" >> ./data.txt 
 echo "Values saved to data.txt."
 
-# Get the current date and time with the day of the week
-CURRENT_DATE=$(date '+%A, %Y-%m-%d %H:%M:%S')
+TEXT="Summarize the following in concise bullet points: $VALUES. Provide only descriptions—no subject lines, introductions, or text formatting like asterisk, sharp sigh etc."
 
-# Send notification to the bot
-if [[ -n "$VALUES" ]]; then
-    MESSAGE=$(printf "Daily report saved on %s with values:\n%s" "$CURRENT_DATE" "$VALUES")
-else
-    MESSAGE="Daily report saved on $CURRENT_DATE, but no values were retrieved."
+# Function to generate the summary using Gemini API
+generate_summary() {
+  RESPONSE=$(curl -s -H 'Content-Type: application/json' \
+    -d '{"contents":[{"parts":[{"text":"'"$TEXT"'"}]}]}' \
+    -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=$GEMINI_API_KEY")
+  
+  # Extract and return the summary
+  echo "$RESPONSE" | jq -r '.candidates[0].content.parts[0].text'
+}
+
+# Initial summary generation
+SUMMARY=$(generate_summary)
+
+# Check if the summary is valid
+if [[ -z "$SUMMARY" ]]; then
+    echo "Failed to generate a summary."
+    exit 1
 fi
 
-# Construct JSON payload
-JSON_PAYLOAD=$(jq -n --arg message "$MESSAGE" '{text: $message}')
+# Output the generated summary
+echo -e "Generated Summary:\n$SUMMARY"
 
-# Send the notification
+# Send the summary to the bot
+# Construct JSON payload directly with SUMMARY
+JSON_PAYLOAD=$(jq -n --arg message "$SUMMARY" '{text: $message}')
+
+# Send the notification to the webhook
 RESPONSE=$(curl -s -X POST "$WEEKLY_WEBHOOK_URL" \
     -H "Content-Type: application/json" \
     -d "$JSON_PAYLOAD")
 
+# Output the response from the webhook
 echo "Notification sent to bot: $RESPONSE"
