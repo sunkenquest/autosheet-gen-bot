@@ -92,7 +92,7 @@ MESSAGE=$(printf "Generated Summary:\n%s" "$SUMMARY")
 JSON_PAYLOAD=$(jq -n --arg message "$MESSAGE" '{text: $message}')
 
 # Send the notification to the webhook
-RESPONSE=$(curl -s -X POST "$WEEKLY_WEBHOOK_URL" \
+RESPONSE=$(curl -s -X POST "$DAILY_WEBHOOK_URL" \
     -H "Content-Type: application/json" \
     -d "$JSON_PAYLOAD")
 
