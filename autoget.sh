@@ -64,11 +64,14 @@ echo "$VALUES" >> ./data.txt
 echo "" >> ./data.txt 
 echo "Values saved to data.txt."
 
+# Get the current date and time with the day of the week
+CURRENT_DATE=$(date '+%A, %Y-%m-%d %H:%M:%S')
+
 # Send notification to the bot
 if [[ -n "$VALUES" ]]; then
-    MESSAGE=$(printf "Daily report saved with values:\n%s" "$VALUES")
+    MESSAGE=$(printf "Daily report saved on %s with values:\n%s" "$CURRENT_DATE" "$VALUES")
 else
-    MESSAGE="Daily report saved, but no values were retrieved."
+    MESSAGE="Daily report saved on $CURRENT_DATE, but no values were retrieved."
 fi
 
 # Construct JSON payload
