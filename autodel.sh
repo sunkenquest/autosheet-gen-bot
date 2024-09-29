@@ -2,7 +2,7 @@
 
 # Empty data.txt
 if [[ -f ./data.txt ]]; then
-    > data.txt
+    > ./data.txt
     echo "data.txt emptied."
 else
     echo "data.txt not found!"
