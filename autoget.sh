@@ -89,8 +89,7 @@ fi
 echo -e "Generated Summary:\n$SUMMARY"
 
 # Send the summary to the bot
-# Construct JSON payload directly with SUMMARY
-JSON_PAYLOAD=$(jq -n --arg message "Generated Summary:\n $SUMMARY" '{text: $message}')
+JSON_PAYLOAD=$(jq -n --arg message "Generated Summary:\\n $SUMMARY" '{text: $message}')
 
 # Send the notification to the webhook
 RESPONSE=$(curl -s -X POST "$WEEKLY_WEBHOOK_URL" \
