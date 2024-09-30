@@ -1,0 +1,11 @@
+2024-09-30 10:25:15
+- refine automation script scheduling
+- created a cli integration of gemini api
+- created a cli integration of gemini api
+- created a chat bot intergration in google space
+- explore potential automation uses of chat bot
+- fix authentication and verification problem in oauth
+- assemble christmas decoration
+- fix publishing issue on Google Workspace Martketplace
+- started studying C# ASP
+
