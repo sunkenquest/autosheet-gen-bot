@@ -64,7 +64,7 @@ echo "$VALUES" >> ./data.txt
 echo "" >> ./data.txt 
 echo "Values saved to data.txt."
 
-TEXT="Summarize the following in concise bullet points: $VALUES. Provide only descriptions—no subject lines, introductions, or text formatting like asterisk, sharp sigh etc."
+TEXT="Summarize the following in a concise paragraph: $VALUES. Provide only descriptions—no subject lines, introductions, or text formatting."
 
 # Function to generate the summary using Gemini API
 generate_summary() {
