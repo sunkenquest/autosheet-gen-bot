@@ -9,3 +9,13 @@
 - fix publishing issue on Google Workspace Martketplace
 - started studying C# ASP
 
+2024-10-01 10:24:26
+- setup dotnet framework, blazor webapp and mysql
+- learn Entity Framework Core
+- tested the implementation of Blazor  on VSCode
+- fix mysql  connection database
+- started doing a todo application 
+- structure MVC architecture of the project
+- quick fix on bot publication
+- fix POST api internal message, null referencing
+
