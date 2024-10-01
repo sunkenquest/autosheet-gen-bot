@@ -16,3 +16,11 @@ The auto-sheet-gen-bot is an automated system designed to generate weekly summar
 
 ## Use Case
 Ideal for teams and organizations that require consistent reporting and data analysis, the AutoSheet Gen Bot simplifies the process of summarizing data and enhances productivity by automating routine tasks.
+
+Daily Report
+
+![alt text](image.png)
+
+Weekly Report
+
+![alt text](image-1.png)
