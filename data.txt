@@ -29,3 +29,13 @@
 - quick fix on bot publication
 - fix POST api internal message, null referencing
 
+2024-10-02 10:22:50
+- configure the connection of the database MySQL of a Blazor Web Application
+- created a crud application to practice the implementation
+- explored using Visual Studio as the primary IDE for the C# project
+- continue learning c# syntax, entity framework core, web assembly services, 
+- fix mysql server connection on practice project
+- learning to navigate the codebase and familiarize myself with the flow of data
+- learning to navigate the codebase and familiarize myself with the flow of data
+- learning to navigate the codebase and familiarize myself with the flow of data
+
