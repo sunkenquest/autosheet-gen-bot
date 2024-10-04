@@ -1,4 +1,4 @@
-2024-09-30 10:25:15
+2024-09-30 
 - refine automation script scheduling
 - created a cli integration of gemini api
 - created a cli integration of gemini api
@@ -9,7 +9,7 @@
 - fix publishing issue on Google Workspace Martketplace
 - started studying C# ASP
 
-2024-10-01 10:24:26
+2024-10-01
 - setup dotnet framework, blazor webapp and mysql
 - learn Entity Framework Core
 - tested the implementation of Blazor  on VSCode
@@ -19,17 +19,7 @@
 - quick fix on bot publication
 - fix POST api internal message, null referencing
 
-2024-10-01 13:32:17
-- setup dotnet framework, blazor webapp and mysql
-- learn Entity Framework Core
-- tested the implementation of Blazor  on VSCode
-- fix mysql  connection database
-- started doing a todo application 
-- structure MVC architecture of the project
-- quick fix on bot publication
-- fix POST api internal message, null referencing
-
-2024-10-02 10:22:50
+2024-10-02
 - configure the connection of the database MySQL of a Blazor Web Application
 - created a crud application to practice the implementation
 - explored using Visual Studio as the primary IDE for the C# project
@@ -39,7 +29,7 @@
 - learning to navigate the codebase and familiarize myself with the flow of data
 - learning to navigate the codebase and familiarize myself with the flow of data
 
-2024-10-03 10:22:50
+2024-10-03
 - continue working on the crud application of Employees 
 - implement base repository and added data transfer object
 - refactor utils for success and error responses
@@ -49,4 +39,12 @@
 - started implementing the frontend
 - started implementing the frontend
 
-
+2024-10-04
+- continue learning C#
+- continue learning C#
+- fix scaffolding error when generating templates of Views
+- expand the Swagger APIS
+- connected the frontend and backend by creating a login and register page
+- added token in login response
+- added token in login response
+- refactor repository pattern
