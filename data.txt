@@ -39,3 +39,12 @@
 - learning to navigate the codebase and familiarize myself with the flow of data
 - learning to navigate the codebase and familiarize myself with the flow of data
 
+2024-10-03 10:22:50
+- continue working on the crud application of Employees 
+- implement base repository and added data transfer object
+- refactor utils for success and error responses
+- helped Karl troubleshoot the deployment of cms-api
+- added another Department entity, migrations, controller, model etc
+- added authentication and authorization
+- started implementing the frontend
+- started implementing the frontend
