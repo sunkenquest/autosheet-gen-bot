@@ -56,3 +56,32 @@
   ]
 ]
 
+2024-10-06 10:47:51
+[
+  [
+    "- continue learning C#"
+  ],
+  [
+    "- continue learning C#"
+  ],
+  [
+    "- fix scaffolding error when generating templates of Views"
+  ],
+  [],
+  [
+    "- expand the Swagger APIS"
+  ],
+  [
+    "- connected the frontend and backend by creating a login and register page"
+  ],
+  [
+    "- added token in login response"
+  ],
+  [
+    "- added token in login response"
+  ],
+  [
+    "- refactor repository pattern"
+  ]
+]
+
