@@ -69,7 +69,7 @@ echo "Values saved to data.txt."
 # Function to generate the summary using Gemini API
 #generate_summary() {
 #  RESPONSE=$(curl -s -H 'Content-Type: application/json' \
-    -d '{"contents":[{"parts":[{"text":"'"$TEXT"'"}]}]}' \
+#    -d '{"contents":[{"parts":[{"text":"'"$TEXT"'"}]}]}' \
 #    -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=$GEMINI_API_KEY")
   
   # Extract and return the summary
