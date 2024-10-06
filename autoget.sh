@@ -34,7 +34,7 @@ ACCESS_TOKEN=$(curl -s --request POST \
     --header "Content-Type: application/x-www-form-urlencoded" \
     --data "grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion=$JWT" \
     https://oauth2.googleapis.com/token | jq -r .access_token)
-
+echo $ACCESS_TOKEN
 # Fetch data from the Google Sheet
 RESPONSE=$(curl -s --request GET \
     "https://sheets.googleapis.com/v4/spreadsheets/$SHEET_ID/values/$RANGE?access_token=$ACCESS_TOKEN")
