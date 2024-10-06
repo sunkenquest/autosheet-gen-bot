@@ -31,12 +31,15 @@ generate_summary() {
 # Initial summary generation
 SUMMARY=$(generate_summary)
 
-# Output the summary
-echo -e "Generated Summary:\n$SUMMARY"
+# Format the summary into bullet points
+BULLET_SUMMARY=$(echo "$SUMMARY" | sed 's/^/* /')
+
+# Output the bullet summary
+echo -e "Generated Summary:\n$BULLET_SUMMARY"
 
 # Send the summary to the bot
-# Construct JSON payload directly with SUMMARY
-JSON_PAYLOAD=$(jq -n --arg message "$SUMMARY" '{text: $message}')
+# Construct JSON payload directly with BULLET_SUMMARY
+JSON_PAYLOAD=$(jq -n --arg message "$BULLET_SUMMARY" '{text: $message}')
 
 # Send the notification
 RESPONSE=$(curl -s -X POST "$WEEKLY_WEBHOOK_URL" \
