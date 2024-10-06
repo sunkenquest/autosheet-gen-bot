@@ -36,23 +36,26 @@ ACCESS_TOKEN=$(curl -s --request POST \
     https://oauth2.googleapis.com/token | jq -r .access_token)
 echo $ACCESS_TOKEN
 # Fetch data from the Google Sheet
+# Fetch data from the Google Sheet
 RESPONSE=$(curl -s --request GET \
     "https://sheets.googleapis.com/v4/spreadsheets/$SHEET_ID/values/$RANGE?access_token=$ACCESS_TOKEN")
 
-if [[ $RESPONSE == *"error"* ]]; then
+# Check for an error in the response
+if [[ $(echo "$RESPONSE" | jq -r .error) != "null" ]]; then
     echo "Error in API response: $RESPONSE"
     exit 1
 fi
 
 # Check if values are present
-if echo "$RESPONSE" | jq . >/dev/null 2>&1; then
-    echo "All values in the range:"
-    VALUES=$(echo "$RESPONSE" | jq -r '.values[] | .[] // empty')
-    echo "$VALUES"
-else
-    echo "Invalid JSON response."
+VALUES=$(echo "$RESPONSE" | jq -r .values)
+
+if [[ "$VALUES" == "null" || -z "$VALUES" ]]; then
+    echo "No values found in the specified range."
     exit 1
+else
+    echo "Fetched values: $VALUES"
 fi
+
 
 # Ensure data.txt exists
 if [[ ! -f ./data.txt ]]; then
