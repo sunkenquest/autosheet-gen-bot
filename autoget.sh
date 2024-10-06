@@ -53,8 +53,10 @@ if [[ "$VALUES" == "null" || -z "$VALUES" ]]; then
     echo "No values found in the specified range."
     exit 1
 else
-    echo "Fetched values: $VALUES"
+    echo "Generated Summary:"
+    echo "$VALUES" | jq -r '.[] | .[]' | sed 's/^/* /'
 fi
+
 
 
 # Ensure data.txt exists
