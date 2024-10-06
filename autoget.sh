@@ -64,29 +64,29 @@ echo "$VALUES" >> ./data.txt
 echo "" >> ./data.txt 
 echo "Values saved to data.txt."
 
-TEXT="Summarize the following in a concise paragraph: $VALUES. Use "I" as point of view. Provide only descriptions—no subject lines, introductions, or text formatting."
+#TEXT="Summarize the following in a concise paragraph: $VALUES. Use "I" as point of view. Provide only descriptions—no subject lines, introductions, or text formatting."
 
 # Function to generate the summary using Gemini API
-generate_summary() {
-  RESPONSE=$(curl -s -H 'Content-Type: application/json' \
+#generate_summary() {
+#  RESPONSE=$(curl -s -H 'Content-Type: application/json' \
     -d '{"contents":[{"parts":[{"text":"'"$TEXT"'"}]}]}' \
-    -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=$GEMINI_API_KEY")
+#    -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=$GEMINI_API_KEY")
   
   # Extract and return the summary
-  echo "$RESPONSE" | jq -r '.candidates[0].content.parts[0].text'
-}
+#  echo "$RESPONSE" | jq -r '.candidates[0].content.parts[0].text'
+#}
 
 # Initial summary generation
-SUMMARY=$(generate_summary)
+#SUMMARY=$(generate_summary)
 
 # Check if the summary is valid
-if [[ -z "$SUMMARY" ]]; then
-    echo "Failed to generate a summary."
-    exit 1
-fi
+#if [[ -z "$SUMMARY" ]]; then
+#    echo "Failed to generate a summary."
+#    exit 1
+#fi
 
 # Prepare the message with proper newlines
-MESSAGE=$(printf "Generated Summary:\n%s" "$SUMMARY")
+MESSAGE=$(printf "Generated Summary:\n%s" "$VALUES")
 
 # Construct JSON payload with the formatted message
 JSON_PAYLOAD=$(jq -n --arg message "$MESSAGE" '{text: $message}')
