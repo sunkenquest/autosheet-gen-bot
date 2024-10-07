@@ -53,9 +53,12 @@ if [[ "$VALUES" == "null" || -z "$VALUES" ]]; then
     exit 1
 else
     echo "Generated Summary:"
-    echo "$VALUES" | jq -r '.[] | .[]' | sed '/^\s*$/d' # Remove empty lines
-fi
+    
+    # Flatten the nested array and format as bullet points
+    BULLET_POINTS=$(echo "$VALUES" | jq -r '.[] | .[]' | sed '/^\s*$/d' | sed 's/^/- /')
 
+    echo "$BULLET_POINTS" # Print the bullet points for confirmation
+fi
 
 # Ensure data.txt exists
 if [[ ! -f ./data.txt ]]; then
@@ -63,33 +66,12 @@ if [[ ! -f ./data.txt ]]; then
 fi
 
 echo "$(date '+%Y-%m-%d %H:%M:%S')" >> ./data.txt
-echo "$VALUES" >> ./data.txt
+echo "$BULLET_POINTS" >> ./data.txt
 echo "" >> ./data.txt 
 echo "Values saved to data.txt."
 
-#TEXT="Summarize the following in a concise paragraph: $VALUES. Use "I" as point of view. Provide only descriptions—no subject lines, introductions, or text formatting."
-
-# Function to generate the summary using Gemini API
-#generate_summary() {
-#  RESPONSE=$(curl -s -H 'Content-Type: application/json' \
-#    -d '{"contents":[{"parts":[{"text":"'"$TEXT"'"}]}]}' \
-#    -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=$GEMINI_API_KEY")
-  
-  # Extract and return the summary
-#  echo "$RESPONSE" | jq -r '.candidates[0].content.parts[0].text'
-#}
-
-# Initial summary generation
-#SUMMARY=$(generate_summary)
-
-# Check if the summary is valid
-#if [[ -z "$SUMMARY" ]]; then
-#    echo "Failed to generate a summary."
-#    exit 1
-#fi
-
 # Prepare the message with proper newlines
-MESSAGE=$(printf "Generated Summary:\n%s" "$VALUES")
+MESSAGE=$(printf "Generated Summary:\n%s" "$BULLET_POINTS")
 
 # Construct JSON payload with the formatted message
 JSON_PAYLOAD=$(jq -n --arg message "$MESSAGE" '{text: $message}')
