@@ -1,0 +1,10 @@
+2024-10-07 10:24:14
+- added simple UI for the login and registration of the C# project
+- added simple UI for the login and registration of the C# project
+- added simple UI for the login and registration of the C# project
+- added simple UI for the login and registration of the C# project
+- fix token generation and implementation issue
+- fix token generation and implementation issue
+- fix token generation and implementation issue
+- fix token generation and implementation issue
+
