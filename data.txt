@@ -124,3 +124,13 @@
 - - fix token generation and implementation issue
 - - fix token generation and implementation issue
 
+2024-10-07 09:37:23
+- added simple UI for the login and registration of the C# project
+- added simple UI for the login and registration of the C# project
+- added simple UI for the login and registration of the C# project
+- added simple UI for the login and registration of the C# project
+- fix token generation and implementation issue
+- fix token generation and implementation issue
+- fix token generation and implementation issue
+- fix token generation and implementation issue
+
