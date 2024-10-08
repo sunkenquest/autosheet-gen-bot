@@ -8,3 +8,13 @@
 - fix token generation and implementation issue
 - fix token generation and implementation issue
 
+2024-10-08 10:22:45
+- fixed token issue, stored in cookies
+- added checking and retrieval of access token
+- added middleware to prevent accessing pages that is unauthorized
+- fix error pages to redirect to custom error page
+- started implementing the forgot password, and reset password
+- started implementing the forgot password, and reset password
+- enhance ui of login and register
+- enhance ui of login and register
+
