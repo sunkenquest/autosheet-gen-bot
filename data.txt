@@ -18,3 +18,13 @@
 - enhance ui of login and register
 - enhance ui of login and register
 
+2024-10-09 10:23:25
+- fixing email verification issue
+- continue working on the forgot password, password reset and password confirmation
+- continue working on the forgot password, password reset and password confirmation
+- moved on upskilling on java by exploring microservices and rest api with Spring
+- explored more with Java Spring, establish connection with database
+- created a Spring expense tracker project following base repository, mvc structure
+- connected the project to mysql server and created basic crud operations
+- connected the project to mysql server and created basic crud operations
+
