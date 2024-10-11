@@ -55,3 +55,20 @@
 - feat: call delete api from ui
 - feat: call update expense from ui 
 
+2024-10-11 10:22:26
+- feat-fix: add post income, fixes on date, fixes on directory
+- feat: get all and update income api
+- feat: get income by id
+- feat: delete income api
+- feat: graph income and expense
+- feat: add total and latest stats api
+- feat: balance, min, max income and expense 
+- chore: added swagger ui and error message fixes
+- chore: add base frontned
+- feat: add side bar ui
+- feat: add post expense form component
+- feat: call post expense api from ui
+- feat: call get expense from ui
+- feat: call delete api from ui
+- feat: call update expense from ui 
+
