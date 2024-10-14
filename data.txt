@@ -1,0 +1,10 @@
+2024-10-14 10:19:56
+- feat: call post income from ui
+- feat: call post income from ui
+- feat: call post income from ui
+- feat/call get income from UI
+- feat/call get income from UI
+- feat: call update income from ui
+- feat: call delete income from ui
+- feat: add ui to dashboard
+
