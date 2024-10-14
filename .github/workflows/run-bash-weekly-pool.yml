@@ -3,7 +3,8 @@ name: Run Auto Weekly Pooling Script
 on:
   workflow_dispatch:
   schedule:
-    - cron: 0 10 * * 1-5 # run at 6pm weekdays
+    - cron: 0 10 * * 1-4 # run at 6pm weekdays
+    - cron: 0 17 * * FRI
 
 permissions:
   contents: write
