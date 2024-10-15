@@ -8,3 +8,14 @@
 - feat: call delete income from ui
 - feat: add ui to dashboard
 
+2024-10-15 10:20:52
+- chore: code cleanup, add seeders
+- chore: code cleanup, add seeders
+- chore: code cleanup, add seeders
+- feat/add post user backend
+- feat/add post user backend
+- feat/add post user backend
+- feat: post login backend and register user fizes
+- feat: add income pagination
+- feat: add expense pagination
+
