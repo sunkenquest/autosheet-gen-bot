@@ -19,3 +19,12 @@
 - feat: add income pagination
 - feat: add expense pagination
 
+2024-10-16 10:19:01
+- SICK LEAVE
+- SICK LEAVE
+- SICK LEAVE
+- SICK LEAVE
+- SICK LEAVE
+- SICK LEAVE
+- SICK LEAVE
+
