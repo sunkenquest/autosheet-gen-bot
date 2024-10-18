@@ -38,3 +38,15 @@
 - On Leave
 - On Leave
 
+2024-10-18 09:28:13
+- feat: add login, logout featur, refactor sider
+- feat: add login, logout featur, refactor sider
+- feat: add login, logout featur, refactor sider
+- feat: call register user from ui
+- feat: call register user from ui
+- feat: call register user from ui
+- fix: add remember me column to user table
+- chore: add user seeder, pagination fixes and button ajustments 
+- fix: add remember me column to user table
+- chore: add user seeder, pagination fixes and button ajustments 
+
