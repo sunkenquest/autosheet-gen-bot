@@ -1,0 +1,10 @@
+2024-10-21 10:21:50
+- configure jwt token authentication to expense and income tracker 
+- configure jwt token authentication to expense and income tracker 
+- configure jwt token authentication to expense and income tracker 
+- configure jwt token authentication to expense and income tracker 
+- configure jwt token authentication to expense and income tracker 
+- configure jwt token authentication to expense and income tracker 
+- configure jwt token authentication to expense and income tracker 
+- configure jwt token authentication to expense and income tracker 
+
