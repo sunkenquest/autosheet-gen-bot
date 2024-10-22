@@ -8,3 +8,13 @@
 - configure jwt token authentication to expense and income tracker 
 - configure jwt token authentication to expense and income tracker 
 
+2024-10-22 10:19:11
+- dockerized expense tracker to prepare it for deploymenr
+- dockerized expense tracker to prepare it for deploymenr
+- dockerized expense tracker to prepare it for deploymenr
+- dockerized expense tracker to prepare it for deploymenr
+- dockerized expense tracker to prepare it for deploymenr
+- dockerized expense tracker to prepare it for deploymenr
+- dockerized expense tracker to prepare it for deploymenr
+- dockerized expense tracker to prepare it for deploymenr
+
