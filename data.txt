@@ -18,3 +18,13 @@
 - dockerized expense tracker to prepare it for deploymenr
 - dockerized expense tracker to prepare it for deploymenr
 
+2024-10-23 10:18:59
+- continue fixing docker configuration for deployment
+- continue fixing docker configuration for deployment
+- continue fixing docker configuration for deployment
+- continue fixing docker configuration for deployment
+- continue fixing docker configuration for deployment
+- continue fixing docker configuration for deployment
+- continue fixing docker configuration for deployment
+- continue fixing docker configuration for deployment
+
