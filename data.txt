@@ -28,3 +28,13 @@
 - continue fixing docker configuration for deployment
 - continue fixing docker configuration for deployment
 
+2024-10-24 10:19:11
+- continue fixing docker configuration
+- continue fixing docker configuration
+- continue fixing docker configuration
+- implemented jwt authentication on expense tracker
+- implemented jwt authentication on expense tracker
+- implemented jwt authentication on expense tracker
+- implemented jwt authentication on expense tracker
+- implemented jwt authentication on expense tracker
+
