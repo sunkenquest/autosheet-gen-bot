@@ -38,3 +38,15 @@
 - implemented jwt authentication on expense tracker
 - implemented jwt authentication on expense tracker
 
+2024-10-25 09:22:52
+- chore: fix db seed during run
+- chore: fix db seed during run
+- chore: fix db seed during run
+- chore: fix db seed during run
+- feat: add sorting feature on expense
+- feat: add sorting to income
+- hotfix: fix incorrect sorting asc and desc
+- feat: add sorting feature on expense
+- feat: add sorting to income
+- hotfix: fix incorrect sorting asc and desc
+
