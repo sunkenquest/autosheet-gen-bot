@@ -1,0 +1,11 @@
+2024-10-28 10:20:23
+- chore: add makefile to run backend and frontend
+- hotfix: fix subsribing register frontend
+- chore: make confirmation modal a component
+- chore:add modal confirmation to delete income
+- chore: add modal confirmation delete on expense
+- chore: modify route names
+- chore: setup cookies
+- chore: setup cookies
+- chore: setup cookies
+
