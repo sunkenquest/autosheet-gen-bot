@@ -17,3 +17,13 @@
 - configure macOS virtual machine
 - configure macOS virtual machine
 
+2024-10-30 10:19:58
+- learning Ruby on Rails
+- learning Ruby on Rails
+- learning Ruby on Rails
+- learning Ruby on Rails
+- learning Ruby on Rails
+- working on CMS with Ruby on Rails project
+- configure postgresql on local
+- working on CMS with Ruby on Rails project
+
