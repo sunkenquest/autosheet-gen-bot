@@ -37,3 +37,13 @@
 - created a vue js headless Content Management System (CMS) using Strapi
 - created a vue js headless Content Management System (CMS) using Strapi
 
+2024-10-31 10:19:21
+- continued working on Spina CMS using Ruby on rails framework
+- continued working on Spina CMS using Ruby on rails framework
+- continued working on Spina CMS using Ruby on rails framework
+- continued working on Spina CMS using Ruby on rails framework
+- continued working on Spina CMS using Ruby on rails framework
+- created a vue js headless Content Management System (CMS) using Strapi
+- created a vue js headless Content Management System (CMS) using Strapi
+- created a vue js headless Content Management System (CMS) using Strapi
+
