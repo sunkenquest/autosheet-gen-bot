@@ -27,3 +27,13 @@
 - configure postgresql on local
 - working on CMS with Ruby on Rails project
 
+2024-10-31 09:39:07
+- continued working on Spina CMS using Ruby on rails framework
+- continued working on Spina CMS using Ruby on rails framework
+- continued working on Spina CMS using Ruby on rails framework
+- continued working on Spina CMS using Ruby on rails framework
+- continued working on Spina CMS using Ruby on rails framework
+- created a vue js headless Content Management System (CMS) using Strapi
+- created a vue js headless Content Management System (CMS) using Strapi
+- created a vue js headless Content Management System (CMS) using Strapi
+
