@@ -8,3 +8,12 @@
 - feat: add base frontend for the blog
 - feat: add base frontend for the blog
 
+2024-11-05 10:20:16
+-  chore: add styles and atomic design
+-  chore: add styles and atomic design
+-  chore: add styles and atomic design
+-  chore: add styles and atomic design
+-  chore: add styles and atomic design
+-  chore: add styles and atomic design
+-  chore: add styles and atomic design
+
