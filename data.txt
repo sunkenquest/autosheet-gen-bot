@@ -17,3 +17,13 @@
 -  chore: add styles and atomic design
 -  chore: add styles and atomic design
 
+2024-11-06 10:19:03
+- feat: add header designs following atomic structure
+- feat: add header designs following atomic structure
+- feat: add header designs following atomic structure
+- feat: add header designs following atomic structure
+- feat: add header designs following atomic structure
+- feat: add newsletter subscribtion ui
+- feat: add newsletter subscribtion ui
+- feat: add newsletter subscribtion ui
+
