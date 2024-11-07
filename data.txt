@@ -27,3 +27,13 @@
 - feat: add newsletter subscribtion ui
 - feat: add newsletter subscribtion ui
 
+2024-11-07 10:18:40
+- feat: connect strapi blog to frontend
+- feat: connect strapi blog to frontend
+- feat: connect strapi blog to frontend
+- feat: connect strapi blog to frontend
+- feat: connect strapi blog to frontend
+- feat: connect strapi header to frontend
+- feat: connect strapi header to frontend
+- feat: connect strapi header to frontend
+
