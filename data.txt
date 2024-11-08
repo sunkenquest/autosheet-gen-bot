@@ -37,3 +37,13 @@
 - feat: connect strapi header to frontend
 - feat: connect strapi header to frontend
 
+2024-11-08 09:24:13
+- feat: connect header strapi to frontend
+- feat: connect header strapi to frontend
+- feat: connect header strapi to frontend
+- feat: connect header strapi to frontend
+- feat: connect header strapi to frontend
+- feat: connect header strapi to frontend
+- checked tin status
+- hotfix: fix auto height in container (#8)
+
