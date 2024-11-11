@@ -1,0 +1,10 @@
+2024-11-11 10:19:39
+- chore: add description to the newsletter
+- chore: add readme file
+- chore: add readme file
+- chore: setup sendgrid email
+- chore: setup sendgrid email
+- chore: setup sendgrid email
+- chore: setup sendgrid email
+- chore: setup sendgrid email
+
