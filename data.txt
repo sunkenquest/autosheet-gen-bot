@@ -8,3 +8,13 @@
 - chore: setup sendgrid email
 - chore: setup sendgrid email
 
+2024-11-12 10:18:55
+- chore: connect sendgrid to subscription
+- chore: connect sendgrid to subscription
+- chore: connect sendgrid to subscription
+- chore: connect sendgrid to subscription
+- fix: subsription email serviuce
+- feat: add modal to content
+- feat: add modal to content
+- feat: add modal to content
+
