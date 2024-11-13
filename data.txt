@@ -18,3 +18,13 @@
 - feat: add modal to content
 - feat: add modal to content
 
+2024-11-13 10:19:02
+- created a python gui project for mapping the stock values at different timelines
+- created a python gui project for mapping the stock values at different timelines
+- created a python gui project for mapping the stock values at different timelines
+- created a python gui project for mapping the stock values at different timelines
+- created a python gui project for mapping the stock values at different timelines
+- fix python environment error on local
+- chore: fix and replace python environment
+- chore: add csv reader as backup
+
