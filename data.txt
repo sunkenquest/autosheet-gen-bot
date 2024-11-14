@@ -28,3 +28,13 @@
 - chore: fix and replace python environment
 - chore: add csv reader as backup
 
+2024-11-14 10:19:41
+- Earthquake drill
+- Created a Python Flask contact CRUD project 
+- feat: add get contacts api
+- feat: add get contacts api
+- feat: post contact api
+- feat: post contact api
+- run some errands
+- feat: add delete contact api
+
