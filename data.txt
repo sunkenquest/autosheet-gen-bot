@@ -38,3 +38,12 @@
 - run some errands
 - feat: add delete contact api
 
+2024-11-15 09:23:03
+- refactor: frontend setup
+- refactor: frontend setup
+- refactor: frontend setup
+- run some errands
+- run some errands
+- run some errands
+- refactor: restructure frontend
+
