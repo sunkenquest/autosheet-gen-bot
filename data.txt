@@ -46,4 +46,4 @@
 - run some errands
 - run some errands
 - refactor: restructure frontend
-
+- chore: setup jwt token authentication
