@@ -1,0 +1,10 @@
+2024-11-18 10:21:10
+- chore: add jwt utils
+- refactor: main, prep for mvc
+- chore: setup jwt configuration
+- chore: setup jwt configuration
+- refactor: user model
+- refactor: user model
+- feat: add register and login
+- chore: add expiry date on token
+
