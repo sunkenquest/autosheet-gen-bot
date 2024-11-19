@@ -8,3 +8,13 @@
 - feat: add register and login
 - chore: add expiry date on token
 
+2024-11-19 10:20:17
+- refactor: add model folder
+- refactor: add model folder
+- refactor: add model folder
+- chore: restructure service layer
+- chore: restructure service layer
+- chore: restructure service layer
+- chore: restructure service layer
+- refactor: remove unused library
+
