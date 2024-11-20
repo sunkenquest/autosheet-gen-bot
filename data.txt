@@ -18,3 +18,15 @@
 - chore: restructure service layer
 - refactor: remove unused library
 
+2024-11-20 10:20:11
+- refactor: transfer access toekn directory
+- refactor: transfer access toekn directory
+- feat: add email notifation after registration
+- feat: add email notifation after registration
+- feat: add delete user feature
+- feat: configure email sending
+- feat: add email confirmation checking
+- feat: add token generation, email confirmation service
+- feat: add resend email verification
+- feat: add custom email template
+
