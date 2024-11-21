@@ -30,3 +30,13 @@
 - feat: add resend email verification
 - feat: add custom email template
 
+2024-11-21 10:20:05
+- feat: add forgot password feat
+- feat: add forgot password feat
+- feat: add reset password token
+- feat: add forgot password generate token
+- feat: add forgot password generate token
+- deploy:  add deployment to railway
+- deploy: add python dependency requiremtns
+- deploy: fix deployment
+
