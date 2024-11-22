@@ -40,3 +40,13 @@
 - deploy: add python dependency requiremtns
 - deploy: fix deployment
 
+2024-11-22 09:29:59
+- fear: add gemini api implemenation
+- fear: add gemini api implemenation
+- fear: add gemini api implemenation
+- feat: add controller and service
+- feat: add the newly added routes to main
+- feat: add the newly added routes to main
+- feat: add the newly added routes to main
+- feat: add the basic frontend
+
