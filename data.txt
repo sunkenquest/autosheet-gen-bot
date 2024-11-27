@@ -8,3 +8,13 @@
 - refactor: modularize frontned contend and upload image
 - refactor: modularize frontned contend and upload image
 
+2024-11-27 10:20:42
+- chore: ajust prompt
+- chore: add react markdown dependencies
+- feat: adjust styles
+- chore: add hooks file
+- feat: fix styles
+- feat: add loader
+- new: working on react native expo project
+- new: working on react native expo project
+
