@@ -18,3 +18,13 @@
 - new: working on react native expo project
 - new: working on react native expo project
 
+2024-11-28 10:20:49
+- continue working on expo react native project
+- continue working on expo react native project
+- continue working on expo react native project
+- continue working on expo react native project
+- fix camera permissions and media library
+- fix camera permissions and media library
+- fix camera permissions and media library
+- fix camera permissions and media library
+
