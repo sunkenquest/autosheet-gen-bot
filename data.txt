@@ -28,3 +28,10 @@
 - fix camera permissions and media library
 - fix camera permissions and media library
 
+2024-11-29 09:24:33
+- ASE meeting
+- SEO optimization research
+- research fast api implemtation
+- research fast api implemtation
+- research fast api implemtation
+
