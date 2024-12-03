@@ -8,3 +8,14 @@
 - implement Twilio service for sms notification
 - implement Twilio service for sms notification
 
+2024-12-03 10:21:56
+- chore: transfer to service
+- chore: transfer to service
+- chore: transfer to service
+- refactor: add db saving
+- refactor: add db saving
+- setup: expo app
+- setup: expo app
+- setup: expo app
+- feat: setup pytest
+
