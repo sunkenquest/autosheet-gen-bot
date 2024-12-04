@@ -19,3 +19,13 @@
 - setup: expo app
 - feat: setup pytest
 
+2024-12-04 10:21:06
+- feat: setup graphql
+- feat: setup graphql
+- feat: setup graphql
+- fix: graphql issue
+- fix: graphql issue
+- fix: routing
+- fix: routing
+- feat: add path params in graphql
+
