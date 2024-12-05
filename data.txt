@@ -29,3 +29,13 @@
 - fix: routing
 - feat: add path params in graphql
 
+2024-12-05 10:21:08
+- chore: setup vue3 for frontend
+- chore: setup vue3 for frontend
+- chore: setup tailwindcss
+- study component-driven development 
+- study component-driven development 
+- study component-driven development 
+- feat: add navbar
+- feat: add navbar
+
