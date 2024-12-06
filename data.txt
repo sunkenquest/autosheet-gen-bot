@@ -39,3 +39,13 @@
 - feat: add navbar
 - feat: add navbar
 
+2024-12-06 09:24:32
+- fix: improve navbar designs
+- fix: improve navbar designs
+- fix: improve navbar designs
+- fix: improve navbar designs
+- fix: improve navbar designs
+- feat: add banner designs
+- feat: add banner designs
+- feat: add banner designs
+
