@@ -1,0 +1,10 @@
+2024-12-09 10:21:58
+- fix: improve navbar designs
+- fix: improve navbar designs
+- fix: improve navbar designs
+- fix: improve navbar designs
+- fix: improve navbar designs
+- feat: add banner designs
+- feat: add banner designs
+- feat: add banner designs
+
