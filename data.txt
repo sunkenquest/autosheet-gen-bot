@@ -18,3 +18,13 @@
 - study integration testing on fastapi
 - study integration testing on fastapi
 
+2024-12-11 10:21:04
+- feat: add integration testing for user features
+- feat: add integration testing for user features
+- feat: add integration testing for user features
+- feat: add integration testing for user features
+- create intest.yml
+- Interview with IMAS Client
+- chore: adjust version
+- chore: chores amd fixes
+
