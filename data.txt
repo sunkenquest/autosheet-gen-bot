@@ -28,3 +28,13 @@
 - chore: adjust version
 - chore: chores amd fixes
 
+2024-12-12 10:21:06
+- feat: add integ test to messgae feat
+- feat: add integ test to messgae feat
+- feat: add integ test to messgae feat
+- fix: remove commented test in makefile
+- fix: remove commented test in makefile
+- fix: test
+- fix: test
+- fix: status code reponse
+
