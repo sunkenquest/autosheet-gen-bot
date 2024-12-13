@@ -38,3 +38,13 @@
 - fix: test
 - fix: status code reponse
 
+2024-12-13 09:51:56
+- feat: add create shop item backend
+- feat: add create shop item backend
+- feat: add create shop item backend
+- chore: adjust create post service
+- Run some errands
+- Run some errands
+- feat: add get all items
+- chore: remove message test and add create item test
+
