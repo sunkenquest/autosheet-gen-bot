@@ -8,3 +8,13 @@
 - study seo optimization
 - study seo optimization
 
+2024-12-17 10:20:45
+- feat: created unified report automation  for ASE daily report
+- feat: created unified report automation  for ASE daily report
+- feat: created unified report automation  for ASE daily report
+- feat: add makefile to run the scripts
+- seo research
+- seo research
+- seo research
+- setup hipe_asia to local
+
