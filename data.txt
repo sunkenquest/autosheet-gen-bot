@@ -28,3 +28,13 @@
 - utilize ScreamingFrog software to detect website issues 
 - utilize ScreamingFrog software to detect website issues 
 
+2024-12-19 10:20:09
+- investigated top issues concerning SEO Optimization
+- meeting with ASE regarding SEO
+- created Sheet for Missing Alt text fix
+- find missing alt links to the codebase
+- find missing alt links to the codebase
+- find missing alt links to the codebase
+- find missing alt links to the codebase
+- find missing alt links to the codebase
+
