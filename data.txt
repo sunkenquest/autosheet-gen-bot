@@ -18,3 +18,13 @@
 - meeting with Areus devs with the project
 - meeting with Areus devs with the project
 
+2025-01-08 10:19:24
+- research api implementation of listing creation for Waze
+- research api implementation of listing creation for Waze
+- research api implementation of listing creation for Waze
+- created sequence diagram for updating/creating listing for Waze platform
+- created sequence diagram for updating/creating listing for Waze platform
+- explore Uberall functionality and features
+- explore Uberall functionality and features
+- explore Uberall functionality and features
+
