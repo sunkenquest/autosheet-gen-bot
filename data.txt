@@ -28,3 +28,13 @@
 - explore Uberall functionality and features
 - explore Uberall functionality and features
 
+2025-01-09 10:19:40
+- continue the investigation of implementation of Waze listing
+- investigated the relation between Waze and Google Maps through GBP
+- investigated the relation between Waze and Google Maps through GBP
+- meeting with Seto-san and other members
+- investigated Petal Search listing through Huawei Business Connect
+- investigated Petal Search listing through Huawei Business Connect
+- investigated Petal Search listing through Huawei Business Connect
+- investigated Petal Search listing through Huawei Business Connect
+
