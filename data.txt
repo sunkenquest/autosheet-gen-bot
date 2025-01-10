@@ -38,3 +38,13 @@
 - investigated Petal Search listing through Huawei Business Connect
 - investigated Petal Search listing through Huawei Business Connect
 
+2025-01-10 09:46:17
+- worked on Petal Search feasibility implementation 
+- worked on Petal Search feasibility implementation 
+- created summary of the pricing of LDE
+- continued working on Petal Seach feasibility implementation
+- continued working on Petal Seach feasibility implementation
+- meeting with seto-san and other members for the LDE discoveries
+- reassesing the plan of new development approach
+- plan on backend system approach if the new proposal proceeds.
+
