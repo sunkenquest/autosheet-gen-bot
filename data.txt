@@ -12,18 +12,6 @@
 - Assisted Robin in Baidu & Google comparison
 - Assisted Robin in Baidu & Google comparison
 - Assisted Robin in Baidu & Google comparison / asakai
-- .
-- update specification documentation
-- update specification documentation
-- update specification documentation
-- update specification documentation
-- update specification documentation
-
-2025-01-29 10:18:23
-- Assisted Robin in Baidu & Google comparison
-- Assisted Robin in Baidu & Google comparison
-- Assisted Robin in Baidu & Google comparison / asakai
-- .
 - update specification documentation
 - update specification documentation
 - update specification documentation
@@ -40,12 +28,4 @@
 - update specification documentation
 - update specification documentation
 
-2025-01-31 09:21:26
-- 1
-- 2
-- 3
-- 4
-- 6
-- 7
-- 8
 
