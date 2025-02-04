@@ -8,3 +8,13 @@
 - configure backend development using Spring Boot
 - configure backend development using Spring Boot
 
+2025-02-04 10:18:51
+- continue with the backend development environment
+- continue with the backend development environment
+- add docker support for the backend / asakai
+- add docker support for the backend
+- fix docker support for the backend
+- fix docker support for the backend
+- fix docker support for the backend
+- fix docker support for the backend
+
