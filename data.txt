@@ -18,3 +18,13 @@
 - fix docker support for the backend
 - fix docker support for the backend
 
+2025-02-05 10:18:40
+- initial-commit: setup nexusbridge backend
+- initial-commit: setup nexusbridge backend
+- initial-commit: setup nexusbridge backend / asakai
+- fix: docker and local fix
+- fix: docker and local fix
+- fix: docker and local fix
+- fix: erd based on GBP data
+- fix: erd based on GBP data
+
