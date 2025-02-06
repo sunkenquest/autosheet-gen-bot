@@ -28,3 +28,13 @@
 - fix: erd based on GBP data
 - fix: erd based on GBP data
 
+2025-02-06 10:18:52
+- finish ERD modification
+- finish ERD modification
+- finish ERD modification/ asakai
+- finish ERD modification
+- frontend design for get businesses
+- frontend design for get businesses
+- frontend design for get businesses
+- frontend design for get businesses
+
