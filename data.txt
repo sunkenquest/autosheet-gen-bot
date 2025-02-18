@@ -8,3 +8,13 @@
 - fix: reorganize dashboard page
 - feat: search and count logic
 
+2025-02-18 10:19:30
+- feat: search and count logic
+- feat: search and count logic
+- new project onboarding meeting
+- research on feasibility of doing it using CakePHP alone
+- research on feasibility of doing it using CakePHP alone
+- research on feasibility of doing it using CakePHP alone
+- research on feasibility of doing it using CakePHP alone
+- research on feasibility of doing it using CakePHP alone
+
