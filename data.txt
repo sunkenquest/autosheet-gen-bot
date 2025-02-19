@@ -18,3 +18,13 @@
 - research on feasibility of doing it using CakePHP alone
 - research on feasibility of doing it using CakePHP alone
 
+2025-02-19 10:19:15
+- research cakephp, wix architecture
+- research cakephp, wix architecture
+- new project onboarding meeting / asakai
+- new project onboarding meeting
+- configure dev environment for Hybrid project
+- configure dev environment for Hybrid project
+- configure dev environment for Hybrid project
+- configure dev environment for Hybrid project
+
