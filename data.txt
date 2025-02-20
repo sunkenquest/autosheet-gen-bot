@@ -28,3 +28,13 @@
 - configure dev environment for Hybrid project
 - configure dev environment for Hybrid project
 
+2025-02-20 10:19:33
+- troubleshoot MySQL and MariaDB conflicting configuration
+- fixing database sql imports on local
+- fixing database sql imports on local / asakai
+- fixing database sql imports on local
+- fixing database sql imports on local
+- fixing database sql imports on local
+- navigating, familiarizing with the codebase
+- navigating, familiarizing with the codebase
+
