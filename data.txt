@@ -38,3 +38,13 @@
 - navigating, familiarizing with the codebase
 - navigating, familiarizing with the codebase
 
+2025-02-21 09:22:24
+- fix local environment
+- fix local environment
+- debugging show modal and image error 
+- debugging show modal and image error
+- debugging show modal and image error / asakai
+- debugging show modal and image error
+- debugging show modal and image error
+- debugging show modal and image error
+
