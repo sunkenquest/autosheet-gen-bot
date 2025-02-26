@@ -8,3 +8,13 @@
 - fix missing/unrendered images
 - fix missing/unrendered images
 
+2025-02-26 10:19:53
+- studying rpa and engage project	
+- studying rpa and engage project	
+- client meetign
+- studying rpa and engage project	
+- initial rpa impl
+- initial rpa impl
+- initial rpa impl
+- initial rpa impl
+
