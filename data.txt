@@ -8,3 +8,13 @@
 - implemented login rpa
 - implemented login rpa
 
+2025-03-04 10:20:25
+- fix in-memory session after login / asakai
+- fix redirection to job page after success session
+- fix in-memory session after login
+- fix in-memory  session after login / client meeting
+- add logout session
+- fix in-memory session after login
+- refactor to allow login page bypass 
+- refactor to allow login page bypass 
+
