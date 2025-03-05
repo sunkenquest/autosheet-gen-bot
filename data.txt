@@ -18,3 +18,13 @@
 - refactor to allow login page bypass 
 - refactor to allow login page bypass 
 
+2025-03-05 10:20:14
+- fix in-memory session after login
+- creating a request body for create job / asakai
+- creating a request body for create job
+- creating a request body for create job
+- creating a request body for create job
+- refactor: add logger, fix error returns, routes 
+- refactor: add logger, fix error returns, routes 
+- refactor: add logger, fix error returns, routes  
+
