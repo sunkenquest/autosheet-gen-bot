@@ -28,3 +28,13 @@
 - refactor: add logger, fix error returns, routes 
 - refactor: add logger, fix error returns, routes  
 
+2025-03-06 10:20:12
+- creating a request body for create job
+- creating a request body for create job
+- creating a request body for create job
+- hybrid client meeting
+- creating a request body for create job
+- creating a request body for create job / asakai
+- replicate 404 error on baseurl  
+- replicate 404 error on baseurl  
+
