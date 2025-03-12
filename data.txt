@@ -18,3 +18,13 @@
 - continue with job information section rpa
 - continue with job information section rpa
 
+2025-03-12 10:20:03
+- feat: job information section rpa 
+- feat: company information section rpa / asakai
+- feat: company information section rpa 
+- feat: company information section rpa
+- revamp: clean parameter passing
+- revamp: clean parameter passing
+- feat: location information section rpa
+- brainstorm fix on multiple user instance issue
+
