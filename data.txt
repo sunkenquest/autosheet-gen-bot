@@ -38,3 +38,13 @@
 - ON LEAVE
 - ON LEAVE
 
+2025-03-14 09:23:35
+- fix: missed employment status cond check 
+- feat: working location info section rpa
+- feat: working location info section rpa / asakai 
+- feat: working location info section rpa
+- feat: working location info section rpa
+- feat: working location info section rpa
+- feat: job category section rpa
+- feat: salary section rpa
+
