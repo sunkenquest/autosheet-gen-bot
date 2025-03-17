@@ -1,0 +1,10 @@
+2025-03-17 10:21:13
+- feat: salary section rpa
+- feat: salary section rpa
+- feat: salary section rpa
+- bugfix: return block in salary section
+- feat: working hours rpa
+- feat: working hours rpa / asakai
+- debug: queueing for create and not delete
+- debug: queueing for create and not delete
+
