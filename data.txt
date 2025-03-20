@@ -28,3 +28,13 @@
 - debug create and edit job rpa 
 - debug create and edit job rpa 
 
+2025-03-20 10:20:25
+- fix: removed old remarks input rpa
+- fix: removed old remarks input rpa /asakai
+- fix: logs and return request
+- fix: logs and return request
+- fix: mirror changes to edit job rpa
+- fix: mirror changes to edit job rpa
+- fix: mirror changes to edit job rpa 
+- fix: mirror changes to edit job rpa
+
