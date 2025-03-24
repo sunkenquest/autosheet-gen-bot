@@ -1,0 +1,10 @@
+2025-03-24 10:21:16
+- fix: error in check and uncheck checkbox
+- fix: error in check and uncheck checkbox
+- fix: error in check and uncheck checkbox
+- feat: error email notification
+- feat: error email notification
+- feat: error email notification / asakai
+- feat: error email notification
+- feat: error email notification
+
