@@ -8,3 +8,13 @@
 - feat: error email notification
 - feat: error email notification
 
+2025-03-25 10:21:26
+- feat: error email notification
+- feat: error email notification
+- feat: error email notification
+- feat: error email notification / client meeting
+- feat: error email notification
+- feat: error email notification
+- finished: error email notification
+- fix: help robin add work_id to create rpa
+
