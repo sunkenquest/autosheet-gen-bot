@@ -18,3 +18,13 @@
 - finished: error email notification
 - fix: help robin add work_id to create rpa
 
+2025-03-26 10:20:28
+- fix: map rpa select
+- fix: map rpa select / asakai
+- chore: apply email to all APIS, refactor returns
+- chore: apply email to all APIS, refactor returns
+- chore: apply email to all APIS, refactor returns
+- investigate 504 timeout error
+- investigate 504 timeout error
+- test aws fix on timeout error
+
